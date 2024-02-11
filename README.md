@@ -14,6 +14,8 @@
 - **Payload**
 - **Express.js**
 - **mongodb**
+- **tRPC**
+- **Tanstack React Query**
 - **react-hook-form**
 - **zod**
 - **sonner**

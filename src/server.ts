@@ -1,22 +1,25 @@
 import express from 'express'
 import { getPayloadClient } from './get-payload'
 import { nextApp, nextHandler } from './next-utils'
+import * as trpcExpress from "@trpc/server/adapters/express"
+import { appRouter } from './trpc'
+import { inferAsyncReturnType } from '@trpc/server'
 
 const app = express()
 const PORT = Number(process.env.PORT) || 3000
 
-// function createContext({
-//   req, res,
-// }: trpcExpress.CreateExpressContextOptions) {
-//   return ({
-//     req,
-//     res,
-//   })
-// }
+function createContext({
+  req, res,
+}: trpcExpress.CreateExpressContextOptions) {
+  return ({
+    req,
+    res,
+  })
+}
 
-// export type ExpressContext = inferAsyncReturnType<
-//   typeof createContext
-// >
+export type ExpressContext = inferAsyncReturnType<
+  typeof createContext
+>
 
 // export type WebhookRequest = IncomingMessage & {
 //   rawBody: Buffer
@@ -76,13 +79,15 @@ const start = async () => {
   // })
 
   // app.use('/cart', cartRouter)
-  // app.use(
-  //   '/api/trpc',
-  //   trpcExpress.createExpressMiddleware({
-  //     router: appRouter,
-  //     createContext,
-  //   })
-  // )
+
+  // convert trpc router to express middlware
+  app.use(
+    '/api/trpc',
+    trpcExpress.createExpressMiddleware({
+      router: appRouter,
+      createContext,
+    })
+  )
 
   app.use((req, res) => nextHandler(req, res))
 

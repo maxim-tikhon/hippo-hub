@@ -17,10 +17,11 @@ import {
   AuthCredentialsValidator,
   TAuthCredentialsValidator,
 } from '@/lib/validators/account-credentials-validator'
-// import { trpc } from '@/trpc/client'
 // import { toast } from 'sonner'
 // import { ZodError } from 'zod'
 import { useRouter } from 'next/navigation'
+import { trpc } from '@/trpc/client'
+
 
 const Page = () => {
   const {
@@ -33,6 +34,8 @@ const Page = () => {
 
   const router = useRouter()
 
+  const {data} = trpc.anyApiRouter.useQuery()
+  console.log(data)
   // const { mutate, isLoading } =
   //   trpc.auth.createPayloadUser.useMutation({
   //     onError: (err) => {

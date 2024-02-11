@@ -14,3 +14,6 @@
 - **Payload**
 - **Express.js**
 - **mongodb**
+- **react-hook-form**
+- **zod**
+- **sonner**

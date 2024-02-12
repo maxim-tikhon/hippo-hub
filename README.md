@@ -1,3 +1,7 @@
+## HippHub - Fullstack Marketplace for Digital Products
+
+Built with the Next.js 14, tRPC, TypeScript, Payload & Tailwind
+
 ## Project Setup
 
 - `npm install` - install dependencies
@@ -5,17 +9,11 @@
 
 ----
 
-## Technologies
+## Built with
+- **Next.js**
 - **React**
 - **Typescrip**
-- **Next.jsn**
 - **Tailwind CSS**
 - **shadcn/ui**
 - **Payload + mongodb**
-- **Express.js**
 - **tRPC**
-- **Tanstack React Query**
-- **nodemailer + resend**
-- **react-hook-form**
-- **zod**
-- **sonner**

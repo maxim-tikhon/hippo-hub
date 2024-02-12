@@ -5,13 +5,11 @@
 // import { getPayloadClient } from '../get-payload'
 // import { paymentRouter } from './payment-router'
 
-import { router, publicProcedure } from './trpc'
+import { authRouter } from './auth-router'
+import { router } from './trpc'
 
 export const appRouter = router({
-  anyApiRouter: publicProcedure.query(() => {
-    return 'hello'
-  }),
-  // auth: authRouter,
+  auth: authRouter,
   // payment: paymentRouter,
 
   // getInfiniteProducts: publicProcedure

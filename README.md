@@ -11,11 +11,11 @@
 - **Next.jsn**
 - **Tailwind CSS**
 - **shadcn/ui**
-- **Payload**
+- **Payload + mongodb**
 - **Express.js**
-- **mongodb**
 - **tRPC**
 - **Tanstack React Query**
+- **nodemailer + resend**
 - **react-hook-form**
 - **zod**
 - **sonner**

@@ -3,7 +3,7 @@
 ## Built with
 - **Next.js**
 - **React**
-- **Typescrip**
+- **Typescript**
 - **Tailwind CSS**
 - **shadcn/ui**
 - **Payload + mongodb**

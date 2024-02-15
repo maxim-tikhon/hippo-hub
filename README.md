@@ -1,14 +1,5 @@
 ## HippHub - Fullstack Marketplace for Digital Products
 
-Built with the Next.js 14, tRPC, TypeScript, Payload & Tailwind
-
-## Project Setup
-
-- `npm install` - install dependencies
-- `npm run dev` - run dev server
-
-----
-
 ## Built with
 - **Next.js**
 - **React**
@@ -18,3 +9,11 @@ Built with the Next.js 14, tRPC, TypeScript, Payload & Tailwind
 - **Payload + mongodb**
 - **tRPC**
 - **Zustand**
+
+## Screenshots
+![Login](https://github.com/maxim-tikhon/hippo-hub/blob/main/public/Login.png?raw=true)
+![Main](https://github.com/maxim-tikhon/hippo-hub/blob/main/public/Main.png?raw=true)
+![Cart](https://github.com/maxim-tikhon/hippo-hub/blob/main/public/Cart.png?raw=true)
+![Checkout](https://github.com/maxim-tikhon/hippo-hub/blob/main/public/Checkout.png?raw=true)
+![Payment](https://github.com/maxim-tikhon/hippo-hub/blob/main/public/Payment.png?raw=true)
+![Thanks](https://github.com/maxim-tikhon/hippo-hub/blob/main/public/Thanks.png?raw=true)

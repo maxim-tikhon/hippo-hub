@@ -17,3 +17,4 @@ Built with the Next.js 14, tRPC, TypeScript, Payload & Tailwind
 - **shadcn/ui**
 - **Payload + mongodb**
 - **tRPC**
+- **Zustand**
